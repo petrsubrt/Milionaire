@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div id="start">
+        <h1>MILIONAIRE</h1>
+    <button id="startButton">START</button>
+    </div>
+    <div id="end" class="hide">
+        <h1 id="summary"></h1>
+    </div>
+    <div id="game" class="hide" >
+        <div id="nav"> 
+            <p id="numberQuestion">1</p>  
+            <p id="time">30</p>
+        </div>
+        <h1 id="headline"></h1>
+        <div class="container">
+            <div class="answers">
+                <p id="btn1" class="btn" onclick="calcScore(this)"></p>
+                <p id="btn2" class="btn" onclick="calcScore(this)"></p>
+                <p id="btn3" class="btn" onclick="calcScore(this)"></p>
+                <p id="btn4" class="btn" onclick="calcScore(this)"></p>
+            </div>
+        </div>
+    </div>
+        <div id="nextButton" class="hide">
+            <button id="exit">EXIT</button>
+        </div>
+        <div id="playAgain" class="hide">
+            <button id="again" onclick="startGame()">PLAY AGAIN</button>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
